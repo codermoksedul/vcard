@@ -33,24 +33,3 @@ var swiper = new Swiper(".mySwiper3", {
     navigation: false,
     loop: true,
   });
-
-  const shareButton = document.getElementById('shareButton');
-
-  shareButton.addEventListener('click', async () => {
-    try {
-      if (navigator.share) {
-        await navigator.share({
-          title: document.title,
-          url: window.location.href,
-        });
-        console.log('Link shared successfully');
-      } else {
-        console.warn('Web Share API not supported');
-      }
-    } catch (err) {
-      console.error('Error sharing link: ', err);
-    }
-  });
-
-  // share function
-  

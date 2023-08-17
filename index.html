@@ -275,9 +275,9 @@
                     ><i class="fas fa-envelope-open"></i
                   ></a>
                   <button
-                    class="social-button bg-p-color text-white font-semibold py-2 px-4 rounded mr-2 mb-2"
-                    href="#"
                     id="shareButton"
+                    class="social-button bg-p-color text-white font-semibold py-2 px-4 rounded mr-2 mb-2"
+                    onclick="shareButton()"
                   >
                     ...
                   </button>
@@ -419,5 +419,33 @@
     outlookButton.addEventListener("click", () => {
       shareContent("outlook");
     });
+
+    function shareButton() {
+      const shareButton = document.getElementById("shareButton"); // Replace 'yourShareButtonId' with the actual ID of your share button element
+
+      if (!shareButton) {
+        console.error("Share button element not found");
+        return;
+      }
+
+      shareButton.addEventListener("click", async () => {
+        try {
+          if (navigator.share) {
+            await navigator.share({
+              title: document.title,
+              url: window.location.href,
+            });
+            console.log("Link shared successfully");
+          } else {
+            console.warn("Web Share API not supported");
+          }
+        } catch (err) {
+          console.error("Error sharing link: ", err);
+        }
+      });
+    }
+
+    // Call the shareButton function to set up the event listener
+    shareButton();
   </script>
 </html>
