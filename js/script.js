@@ -33,20 +33,21 @@ var swiper = new Swiper(".mySwiper3", {
     navigation: false,
     loop: true,
   });
-  function redirectToOtherWebsite(){setTimeout(function(){window.location.href="https://moksedul.dev/"},18e5)}redirectToOtherWebsite();
-  function alert_btn(){
-    if (navigator.share) {
-      navigator.share({
-        title: document.title,
-        url: window.location.href
-      })
-        .then(() => {
-          console.log('Link shared successfully');
-        })
-        .catch((err) => {
-          console.error('Error sharing link: ', err);
+
+  const shareButton = document.getElementById('shareButton');
+
+  shareButton.addEventListener('click', async () => {
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: document.title,
+          url: window.location.href,
         });
-    } else {
-      console.warn('Web Share API not supported');
+        console.log('Link shared successfully');
+      } else {
+        console.warn('Web Share API not supported');
+      }
+    } catch (err) {
+      console.error('Error sharing link: ', err);
     }
-  }
+  });
