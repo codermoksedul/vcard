@@ -1,0 +1,36 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Sabre//Sabre VObject 4.5.3//EN
+UID:e5f1f0e1-b079-5372-9548-0503d56b01e3
+REV:20230814T121942Z
+SOURCE:https://sprd.li/9o81po5p3d/vcard
+N:fuentes;Jose;;;
+FN:Jose fuentes
+ORG:Print Planet;
+TITLE:President
+ROLE:President
+LANG:en
+CATEGORIES:spreadly
+item0.URL;VALUE=URI:https://instagram.com/printplanet.la
+item1.URL;VALUE=URI:https://www.tiktok.com/@printplanet.us?_t=8ekwpe84vD0&_
+ r=1
+item2.URL;VALUE=URI:https://www.printplanet.la
+item3.URL;VALUE=URI:https://www.facebook.com/profile.php?id=100095350193598
+item4.URL;VALUE=URI:https://www.youtube.com/channel/UCmIH603zfKWV7IkxZzmip3
+ w
+item5.URL;VALUE=URI:www.printplanet.la
+item6.URL;VALUE=URI:https://sprd.li/printplanet
+item0.X-ABLABEL:Instagram
+item1.X-ABLABEL:TikTok
+item2.X-ABLABEL:Website
+item3.X-ABLABEL:Facebook
+item4.X-ABLABEL:YouTube
+item5.X-ABLABEL:Homepage
+item6.X-ABLABEL:Spreadly
+item7.X-ABLABEL:Phone
+item8.X-ABLABEL:Email
+item9.X-ABLABEL:Address
+item7.TEL;TYPE=VOICE:15625361838
+item8.EMAIL:jose@printplanet.la
+item9.ADR:5125 E Beverly Blvd Los Ángeles acá 90022;;;;;;
+END:VCARD
