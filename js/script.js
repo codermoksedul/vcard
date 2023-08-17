@@ -51,3 +51,6 @@ var swiper = new Swiper(".mySwiper3", {
       console.error('Error sharing link: ', err);
     }
   });
+
+  // share function
+  
